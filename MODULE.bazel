@@ -1,0 +1,8 @@
+module (
+    name = "bazel",
+    version = "0.1.0",
+)
+
+bazel_dep(name = "rules_foreign_cc", version = "0.13.0") # this version is very important as version below this won't work with Mac machines with M3 chips
+
+use_extension("@rules_foreign_cc//:extensions.bzl", "toolchains").use_all()
