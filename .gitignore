@@ -5,3 +5,4 @@ bazel-Bazel_BuildSystem_Demo
 bazel-bin
 bazel-out
 bazel-testlogs
+MODULE.bazel.lock
